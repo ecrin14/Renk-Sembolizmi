@@ -73,8 +73,7 @@ def setup_rag_chain(vectorstore, api_key):
     )
 
     # Prompt Template (Önceki adımda esnetilmiş ve optimize edilmiş Prompt)
-    prompt_template = """Sen bir renk sembolizmi uzmanısın. Görevin, sana verilen bağlamı (renkler hakkındaki belgeyi) kullanarak kullanıcı sorularını cevaplamaktır.
-    Cevabını, sağlanan bağlamdaki bilgileri kullanarak, MÜMKÜN OLAN EN KAPSAMLI ŞEKİLDE yaz.
+    prompt_template = """Sen bir renk sembolizmi uzmanısın. Görevin, sana verilen bağlamdaki bilgileri kullanarak, sorudaki farklı renkleri (örneğin Kırmızı ve Mavi) BÖLÜMLER HALİNDE özetleyerek cevap vermektir.
     Cevabı formüle etmek için bağlamdaki bilgileri özetleyebilir, birleştirebilir ve karşılaştırabilirsin.
     Eğer bir konuda kesin bilgi bulamazsan, sadece bildiklerini söyle, kesin bir yokluk belirtme.
     
@@ -122,6 +121,7 @@ if vectorstore:
         else:
 
             st.warning("Lütfen bir soru girin.")
+
 
 
 
