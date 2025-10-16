@@ -25,7 +25,6 @@ if not API_KEY:
 # -------------------------------------------------------------------------
 # FONKSİYON 1: Vektör Veritabanını Kurma ve Önbellekleme
 # -------------------------------------------------------------------------
-@st.cache_resource
 def setup_vector_store(api_key, pdf_path):
     st.info("Veri seti yükleniyor ve RAG sistemi hazırlanıyor. Lütfen bekleyin...")
     
@@ -62,7 +61,6 @@ def setup_vector_store(api_key, pdf_path):
 # -------------------------------------------------------------------------
 # FONKSİYON 2: RAG Zincirini Kurma ve Önbellekleme
 # -------------------------------------------------------------------------
-@st.cache_resource
 def setup_rag_chain(vectorstore, api_key):
     if vectorstore is None:
         return None
@@ -121,4 +119,5 @@ if vectorstore:
         else:
 
             st.warning("Lütfen bir soru girin.")
+
 
