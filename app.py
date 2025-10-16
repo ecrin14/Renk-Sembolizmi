@@ -81,7 +81,7 @@ def setup_rag_chain(vectorstore, api_key):
     Cevap:"""
     PROMPT = PromptTemplate(template=prompt_template, input_variables=["context", "question"])
 
-    # Retriever (k=5: Daha fazla bağlam çekerek genel sorulara cevap vermeyi sağlıyor)
+    # Retriever (k=10: Daha fazla bağlam çekerek genel sorulara cevap vermeyi sağlıyor)
     retriever = vectorstore.as_retriever(search_kwargs={"k": 5}) 
 
     # RAG Zinciri
@@ -119,5 +119,6 @@ if vectorstore:
         else:
 
             st.warning("Lütfen bir soru girin.")
+
 
 
