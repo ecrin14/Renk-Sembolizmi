@@ -25,5 +25,5 @@ https://renk-sembolizmi-eh5necjsybz8vkuliqmvt4.streamlit.app/
 
 Aşağıdaki ekran görüntüsü, chatbot'un veri setindeki bilgileri başarıyla çekip karşılaştırmalı cevap üretebildiğini göstermektedir:
 
-![Çalışan Chatbot Ekran Görüntüsü] <img width="977" height="750" alt="chatbot_calisiyor" src="https://github.com/user-attachments/assets/99fe3fa3-5cbe-4b56-a8bd-e157918bdc23" />
+ <img width="977" height="750" alt="chatbot_calisiyor" src="https://github.com/user-attachments/assets/99fe3fa3-5cbe-4b56-a8bd-e157918bdc23" />
 
