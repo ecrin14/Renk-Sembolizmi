@@ -42,7 +42,7 @@ def setup_vector_store(api_key, pdf_path):
 
         # 2. Embedding Modeli
         embedding_model = GoogleGenerativeAIEmbeddings(
-            model="text-embedding-004", 
+            model="models/text-embedding-004", 
             google_api_key=api_key
         ) 
         
@@ -69,7 +69,7 @@ def setup_rag_chain(vectorstore, api_key):
     
     # LLM (Sıcaklık 0.1: Daha düşük yaratıcılık)
     llm = ChatGoogleGenerativeAI(
-        model="gemini-2.5-flash", 
+        model="models/gemini-2.5-flash", 
         temperature=0.1, 
         google_api_key=api_key
     )
@@ -121,3 +121,4 @@ if vectorstore:
         else:
 
             st.warning("Lütfen bir soru girin.")
+
