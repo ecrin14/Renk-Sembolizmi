@@ -2,6 +2,6 @@ streamlit
 langchain 
 google-genai 
 langchain-community 
-pypdf 
+pypdf==4.2.0 
 chromadb 
-langchain-google-genai
+langchain-google-genai==1.0.3
