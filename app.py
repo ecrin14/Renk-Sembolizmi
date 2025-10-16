@@ -11,7 +11,7 @@ from langchain.prompts import PromptTemplate
 # -------------------------------------------------------------------------
 # AYARLAR VE GİZLİ ANAHTAR YÖNETİMİ
 # -------------------------------------------------------------------------
-PDF_DOSYA_ADI = "proje belgem.pdf" 
+PDF_DOSYA_ADI = "proje_belgem.pdf" 
 CHROMA_DB_DIR = "./chroma_db"
 
 # API Anahtarını Streamlit Secrets'tan (Ortam Değişkeni) Okuma
@@ -119,4 +119,5 @@ if vectorstore:
                 response = qa_chain.run(user_query)
             st.success(response)
         else:
+
             st.warning("Lütfen bir soru girin.")
