@@ -20,3 +20,10 @@ Bu projenin temel amacı, RAG (Retrieval Augmented Generation) temelli bir chatb
 ### 🌐 WEB ARAYÜZÜ (DEPLOY) LİNKİ 
 Projenin çalışan web uygulamasına aşağıdaki linkten erişilebilir:
 https://renk-sembolizmi-eh5necjsybz8vkuliqmvt4.streamlit.app/
+
+### 🖼️ ÜRÜN KILAVUZU / ÇALIŞMA KANITI
+
+Aşağıdaki ekran görüntüsü, chatbot'un veri setindeki bilgileri başarıyla çekip karşılaştırmalı cevap üretebildiğini göstermektedir:
+
+![Çalışan Chatbot Ekran Görüntüsü] <img width="977" height="750" alt="chatbot_calisiyor" src="https://github.com/user-attachments/assets/99fe3fa3-5cbe-4b56-a8bd-e157918bdc23" />
+
